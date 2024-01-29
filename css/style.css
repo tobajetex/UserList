@@ -1,0 +1,25 @@
+.active {
+  background-color: hsl(209, 92%, 50%);
+  border-radius: 10px;
+  color: white important!;
+}
+:hover.active {
+  background-color: hsl(209, 92%, 25%);
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.carousel-item.active {
+  background-color: transparent !important;
+}
+
+.animated-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.carousel-item.active .animated-card {
+  opacity: 1;
+  transform: translateY(0);
+}
